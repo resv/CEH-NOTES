@@ -8,7 +8,7 @@ Repo for CEH notes
 <br>
 3. **Certified Ethical Hacker CEH V13 Practical Guide: Complete Study Resources & Tips** | CEH Practical Guide https://ceh-practical.cavementech.com
 <br>
-4. **CEH/CEH-Prac Guide at main · cmuppin/CEH · GitHub** | [https://github.com/cmuppin/CEH/blob/main/CEH-Prac Guide](https://github.com/cmuppin/CEH/blob/main/CEH-Prac%20Guide)
+4. **CEH/CEH-Prac Guide at main · cmuppin/CEH · GitHub** | https://github.com/cmuppin/CEH/blob/main/CEH-Prac%20Guide
 <br>
 5. **CEH Practical Preparation** | https://chirag-singla.notion.site/CEH-Practical-Preparation-7f2b77651cd144e8872f2f5a30155052
 <br>
