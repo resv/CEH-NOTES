@@ -1,13 +1,13 @@
 # CEH-NOTES
 Repo for CEH notes
 <br><br>
-1. **GitHub - phirojshah/CEH: Notes of Certified Ethical Hacker (CEH Practical)** | GitHub https://github.com/phirojshah/CEH
+1. **Certified Ethical Hacker CEH V13 Practical Guide: Complete Study Resources & Tips** | CEH Practical Guide https://ceh-practical.cavementech.com
 <br>
 <br>
-2. **CEH Practical Lab Notes. Everything you should know | by Necati Ustun | Medium** | https://medium.com/@necati.ustun33/ceh-practical-lab-notes-c849680f54da
+2. **GitHub - phirojshah/CEH: Notes of Certified Ethical Hacker (CEH Practical)** | GitHub https://github.com/phirojshah/CEH
 <br>
 <br>
-3. **Certified Ethical Hacker CEH V13 Practical Guide: Complete Study Resources & Tips** | CEH Practical Guide https://ceh-practical.cavementech.com
+3. **CEH Practical Lab Notes. Everything you should know | by Necati Ustun | Medium** | https://medium.com/@necati.ustun33/ceh-practical-lab-notes-c849680f54da
 <br>
 <br>
 4. **CEH/CEH-Prac Guide at main · cmuppin/CEH · GitHub** | https://github.com/cmuppin/CEH/blob/main/CEH-Prac%20Guide
