@@ -26,3 +26,6 @@ Repo for CEH notes
 <br>
 <br>
 9. **foot print and recon** | https://learn.eccouncil.org/courseVideo/certified-ethical-hacker-v13-ai?lessonId=409a8912-d505-47a3-9a70-249d01f7fcaa&finalAssessment=false&logged=true
+<br>
+<br>
+10. **Quick commands** | https://www.webasha.com/blog/ceh-practical-real-exam-questions-and-answers
