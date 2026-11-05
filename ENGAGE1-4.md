@@ -205,8 +205,12 @@ You are assigned to perform malware scanning on a malware file Tools.rar stored 
 
 Answer: d282
 
-**Challenge** 11:
+**Challenge** 11: (THIS IS HARD, COULD NOT UNDERSTAND HOW TO GET PROCMON ON A MACHINE, I THINK I WEN INTO THE WRONG MACHINE)
 You are assigned to monitor a suspicious process running in a machine whose log file Logfile.PML is saved in Pictures folder of the EH Workstation -2. Analyse the logfile and determine the Parent PID of the malicious file H3ll0.exe process from the log file. (Format: NNNN)
+
+*** look at challenge 8 for pre-req meterpreter
+*** Assuming you didn't type shell yet (type exit if in shell, get in the meter prompt within the connection) 
+*** meterpreter > type: upload /path/to/Procmon64.exe C:\\Windows\\Temp\\Procmon64.exe
 
 - Copy that log file to windows
 - Install procmon.exe in the malware analysis folder
