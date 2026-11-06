@@ -1,3 +1,11 @@
+TIPS to getting file share:
+-know creds for one of the machines (windows better)
+-grab the ip for the windows machine
+-create a folder in windows desktop "shared"
+-in the linux file system type:  smb://WINDOWS IP/shared
+-login using the window creds
+
+
 
 **Challenge** 1:
 An attacker conducted footprinting on a web application and saved the resulting report Dumpster.xlsx in the documents folder of EH Workstation-1. Your task is to analyze this report and identify the hostname associated with the IP address 173.245.59.176. (Format: aaaaa.aa.aaaaaaaaaa.aaa)
@@ -223,7 +231,7 @@ Answer: 6952
 You are tasked with analyzing the ELF executable file named Tornado.elf, located in the Downloads folder of EH Workstation-2. Determine the entropy value of the file up to two decimal places. (Format: N*NN)
 
 - Copy that file to windows
-- open that file with DIE tool inside the static malware analysis folder
+- open that file with DIE tool inside ->07 malware threats/malware analysis tools/Static malware analysis/packaging and obfus tools/DIE/DIE.exe
 - Click Entropy button to see value
 
 Answer: 2.87
