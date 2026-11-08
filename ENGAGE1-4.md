@@ -2,8 +2,9 @@ TIPS to getting file share:
 -know creds for one of the machines (windows better)
 -grab the ip for the windows machine
 -create a folder in windows desktop "shared"
--in the linux file system type:  smb://WINDOWS IP/shared
--login using the window creds
+-Go into shared folder properties->sharing->advacne sharing-> check share this folder-> click permissions button->check full control->ok out all the way
+-in the linux file system type:  smb://WINDOWS IP/shared     smb://172.25.0.11/shared   
+-login using the window creds                                 Admin/Pa$$w0rd
 
 
 
