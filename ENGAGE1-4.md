@@ -270,11 +270,13 @@ Answer: android/dos/46445.c
 An attacker tried to perform session hijacking on a machine from 172.30.10.0/24 subnet. An incident handler found a packet capture file $_Jack.pcapng obtained from the victim machine which is stored in Documents folder of EH Workstation -1. You are assigned to analyse the packet capture file and determine the IP of the victim machine targeted by the attacker. (Format: NNN.NN.NN.NNN)
 - open file in wireshark
 - you can easily find the victim ip
-
+*** Look for [ACK] and [FIN,ACK] and then application data
 Answer: 172.30.10.200
 
 **Challenge** 2:
 An attacker tried to intercept a login session by intercepting the http traffic from the victim machine. The security analyst captured the traffic and stored it in Downloads folder of EH Workstation -1 as Intercep_$niffer.pcapng. Analyse the pcap file and determine the credentials captured by the attacker. (Format: aaa/aaaa)
+
+**** Get rid of stock filter
 - Open file in wireshark
 - filter http.request.method == POST 
 - search for post login.aspx in list and extend the HTML Form
@@ -290,16 +292,17 @@ Answer: 172.30.10.99
 
 **Challenge** 4:
 Conduct a footprinting analysis on the target website www.certifiedhacker.com to identify the web server technology used by the site.(Format: Aaaaaa)
-- whatweb certifiedhacker.com
-
+***Not good** In linux do a command for "whatweb certifiedhacker.com"
+*** telnet www.domain.com 443 -> after connection, "GET / HTTP/1.0"
 Answer: Apache
 
 **Challenge** 5:
 You’re a cybersecurity investigator assigned to a high-priority case. Martin is suspected of engaging in illegal crypto activities, and it’s believed that he has stored his crypto account password in a file named $ollers.txt. Your mission is to crack the SSH credentials for Martin’s machine within the 192.168.10.0/24 subnet and retrieve the password from the $ollers.txt file. (Hint: Search in the folders present on the Desktop to find the target file) (Format: aNaa**NNNNNAA*)
 - nmap -p 22 192.168.10.0/24 --open
-- hydra -l Martin -P password.txt 192.168.10.101
+- hydra -l Martin -P rockyou.txt ssh://192.168.10.101
 - Password: qwerty1234
-- ssh Martin@192.168.10.101   enter password and get the file
+- ssh Martin@192.168.10.101   (key and password prompt)
+*****- traverse to where the file is, if this is a windowos machine type "type filemame.txt" which is like "cat"
 
 Answer: i2tr&^72546HJ*
 
