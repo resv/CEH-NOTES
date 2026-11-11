@@ -308,12 +308,14 @@ Answer: i2tr&^72546HJ*
 
 **Challenge** 6:
 Attackers have identified a vulnerable website and stored the details of this website on one of the machines within the 192.168.10.0/24 subnet. As a cybersecurity investigator you have been tasked to crack the FTP credentials of user nick and determine the ID of the domain. The information you need has been gathered and stored in the w_domain.txt file. (Format: NNNNNNNNNN)
+
+**Webserver may have nmap services of FTP SSH and HTTP
 - Use same procedure in Enage 2 **Challenge** 1 (ftp 192.168.10.111  and password in apple)
 - get W_domain.txt
 
 Answer: 7867721010
 
-**Challenge** 7:
+**Challenge** 7: ((need to take full day)
 You have identified a vulnerable web application on a Linux server at port 8080. Exploit the web application vulnerability, gain access to the server and enter the content of RootFlag.txt as the answer. (Format: Aa*aaNNNN)
 
 - First find the ip hosting website in port 8080 using nmap. Then do further steps
@@ -339,13 +341,14 @@ Answer: Ch@mp2022
 
 **Challenge** 8:
 You are a penetration tester assigned to a new task. A list of websites is stored in the webpent.txt file on the target machine with the IP address 192.168.10.101. Your objective is to find the Meta-Author of the website that is highlighted in the list. (Hint: Use SMB service) (Format: AA-Aaaaaaa)
+
 - Connect to the ip with password found in **Challenge** 5
 - get file from music folder of user Martin
 - whatweb "url"
 
 Answer: EC-Council
 
-**Challenge** 9:
+**Challenge** 9: (WE ARE HERE)
 
 You have recently joined GoodShopping Inc. as a web application security administrator. Eager to understand the security landscape of the company’s website, www.goodshopping.com, you decide to investigate the security updates that have been made over time. Your specific task is to identify the attack category of the oldest Common Vulnerabilities and Exposures (CVEs) affected the website. (Format: aaaaa*aaaa aaaaaaaaaa (AAA) )
 - I found manually you can use Owasp zap or open vas or vega to confirm 
