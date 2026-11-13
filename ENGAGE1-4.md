@@ -348,17 +348,21 @@ You are a penetration tester assigned to a new task. A list of websites is store
 
 Answer: EC-Council
 
-**Challenge** 9: (WE ARE HERE)
+**Challenge** 9:
 
 You have recently joined GoodShopping Inc. as a web application security administrator. Eager to understand the security landscape of the company’s website, www.goodshopping.com, you decide to investigate the security updates that have been made over time. Your specific task is to identify the attack category of the oldest Common Vulnerabilities and Exposures (CVEs) affected the website. (Format: aaaaa*aaaa aaaaaaaaaa (AAA) )
-- I found manually you can use Owasp zap or open vas or vega to confirm 
 
+
+- I found manually you can use Owasp zap or open vas or vega to confirm 
+*** to open zap if you cannot find it, in bash terminal "zaproxy" should boot up zap.
+answer may not be on the zap alerts itself, you have to read and determine which catagorey
 Answer: cross-site scripting (XSS)
 
 **Challenge** 10:
 You are a web penetration tester hired to assess the security of the website www.goodshopping.com. Your primary task is to identify the type of security policies is missing to detect and mitigate Cross-Site Scripting (XSS) and SQL Injection attacks. (Format: Aaaaaaa Aaaaaaaa Aaaaaa)
-- Run Atomated scan with OWASP ZAP
 
+- Run Atomated scan with OWASP ZAP
+**** so you have to skim around again the alerts. This question is about security policy, soo look for things related to security policy
 Answer: Content Security Policy
 
 **Challenge** 11:
