@@ -505,7 +505,10 @@ An attacker had sent a file cryt-128-06encr.hex containing ransom file password,
 - You need to try all algorithms with 128 bit key length with key 06
 - Goto Encrypt/Decrypt -> Symmetric (Modern) -> Further Algorithms -> Twofish
 - Select 128 as key length and put key as 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06
-
+***cryptool is in windows / key is in the filename / 
+***A 128-bit key equals 16 bytes (\(128 \div 8 = 16\)). 
+***In hexadecimal, 1 byte = 2 hex characters (so 06 is one byte).
+***there are only a handful of modern symmetric algorithms under Symmetric (Modern) that support a 128-bit key
 SAMPLE A:  Twofish/@!ph@|tE*t
 
 **PRACTICE** 8: (4. Wireless Networks, Mobile Platforms, IoT and OT , Cloud Computing, and Cryptography)
