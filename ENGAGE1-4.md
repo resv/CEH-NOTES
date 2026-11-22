@@ -533,6 +533,7 @@ SAMPLE A: 61
 CEHORG manages multiple IoT devices and sensors to oversee its supply chain fleet. You are tasked with examining the file "MQTT.pcapng," located in the Home directory of the EH Workstation - 2 machine. Analyze the packet containing the "High_temperature" message and determine the topic length . (Format: NN )
 - Open file with wireshark and filter mqtt
 - Search for publish message and expand to get answer
+*** THIS IS NOT THE LENGTH OF THE FRAME IN FILTERS. YOU HAVE TO CLICK THE PACKET AND GO DOWN AND EXPAND MQTT, there is a "TOPIC LENGTH"
 
 SAMPLE A: 16
 
@@ -540,6 +541,7 @@ SAMPLE A: 16
 An ex-employee of CEHORG is suspected to be performing insider attack. You are assigned a task to attain KEYCODE-5 used in the employees' mobile phone. Note: use option N in PhoneSploit for next page. (Format: Aaaaa*Aaaaaa)
 - cd Phonesploit
 - python phonesploit.py
+*** This is pretty much asking what is keycode 5 mapped to for this particular phone. (e.g. Power Button)
 - type n 2 times and press 39
 
 SAMPLE A: Power Button
@@ -550,6 +552,7 @@ An employee in CEHORG has secretly acquired Confidential access ID through an ap
 - adb connect 192.168.10.121
 - adb pull /sdcard
 - find .txt file and read
+*** Alternativeely you can use phonesploit to connect to sdcard->Music, cat the file using "cat "filename.txt""
 
 SAMPLE A: 80099889
 
@@ -567,6 +570,7 @@ You have received a folder named "Archive" from a vendor. You suspect that someo
 - Copy files to windows
 - Add the Archive folder to the MD5 calculator application
 - Compare with filehashes.txt
+***in bash "md5sum filename.txt"
 
 SAMPLE A: Quotes
 
