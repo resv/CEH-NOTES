@@ -15,6 +15,8 @@ Repo for CEH notes
 <br><br>
 6. **Direct tool, also leads and commands** | https://github.com/phirojshah/CEH/tree/main/practical-ethical-hacker-notes/tools
 <br><br>
-6. **Quick commands, examples, Leads** | https://chirag-singla.notion.site/CEH-Practical-Preparation-7f2b77651cd144e8872f2f5a30155052
+7. **Quick commands, examples, Leads** | https://chirag-singla.notion.site/CEH-Practical-Preparation-7f2b77651cd144e8872f2f5a30155052
 <br><br>
-7. **quick commands explicit** | https://github.com/cmuppin/CEH/blob/main/WordPress%20Brusteforce
+8. **quick commands explicit** | https://github.com/cmuppin/CEH/blob/main/WordPress%20Brusteforce
+<br><br>
+9. **AK notes** | https://docs.google.com/document/d/1628ud8xBkRTMiqn7KCSDT9r7Q_MjV6hpq3oAgmhkAJg/edit?tab=t.0
