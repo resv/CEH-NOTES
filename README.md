@@ -1,32 +1,20 @@
 # CEH-NOTES
 Repo for CEH notes
 <br><br>
-1. OFFICIAL EC-COUNCIL SOURCE | https://learn.eccouncil.org/certification/27da6ac9-896e-48ac-9f53-a70fb0c17529?logged=true
-
-1. **Certified Ethical Hacker CEH V13 Practical Guide: Complete Study Resources & Tips** | CEH Practical Guide https://ceh-practical.cavementech.com
+1. **OFFICIAL EC-COUNCIL SOURCE** | https://learn.eccouncil.org/certification/27da6ac9-896e-48ac-9f53-a70fb0c17529?logged=true
+<br><br>
+2. **OFFICIAL TEXT BOOK** | https://online.vitalsource.com/reader/books/9798894721378/pageid/3896?context_token=5c93f6b0-caa6-013f-b32d-72b8961f00a7
 <br>
-<br>
-2. **GitHub - phirojshah/CEH: Notes of Certified Ethical Hacker (CEH Practical)** | GitHub https://github.com/phirojshah/CEH
-<br>
-<br>
-3. **CEH Practical Lab Notes. Everything you should know | by Necati Ustun | Medium** | https://medium.com/@necati.ustun33/ceh-practical-lab-notes-c849680f54da
-<br>
-<br>
-4. **CEH/CEH-Prac Guide at main · cmuppin/CEH · GitHub** | https://github.com/cmuppin/CEH/blob/main/CEH-Prac%20Guide
-<br>
-<br>
-5. **CEH Practical Preparation** | https://chirag-singla.notion.site/CEH-Practical-Preparation-7f2b77651cd144e8872f2f5a30155052
-<br>
-<br>
-6. **GitHub - Samsar4/Ethical-Hacking-Labs: Practical Ethical Hacking Labs · GitHub** | https://github.com/Samsar4/Ethical-Hacking-Labs
-<br>
-<br>
-7. **CEH-Practical-Notes/README.md at main · TheCyberpunker/CEH-Practical-Notes** | GitHub https://github.com/TheCyberpunker/CEH-Practical-Notes/blob/main/README.md
-<br>
-<br>
-8. **VitalSource Bookshelf: Certified Ethical Hacker** | https://online.vitalsource.com/reader/books/9798894721378/pageid/3896
-<br>
-<br>
-9. **foot print and recon** | https://learn.eccouncil.org/courseVideo/certified-ethical-hacker-v13-ai?lessonId=409a8912-d505-47a3-9a70-249d01f7fcaa&finalAssessment=false&logged=true
-<br>
-<br>
+2.1 **ILABS PDF** | XXXX
+<br><br>
+3. **READABILITY** | https://ceh-practical.cavementech.com/
+<br><br>
+4. **LEADS** | https://github.com/TheCyberpunker/CEH-Practical-Notes/blob/main/6%20-%20Examples%20-%20CEH%20-%20PRACTICAL.md
+<br><br>
+5. **FOR UNEXPLORED** | https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master
+<br><br>
+6. **Direct tool, also leads and commands** | https://github.com/phirojshah/CEH/tree/main/practical-ethical-hacker-notes/tools
+<br><br>
+6. **Quick commands, examples, Leads** | https://chirag-singla.notion.site/CEH-Practical-Preparation-7f2b77651cd144e8872f2f5a30155052
+<br><br>
+7. **quick commands explicit** | https://github.com/cmuppin/CEH/blob/main/WordPress%20Brusteforce
