@@ -5,7 +5,7 @@ Repo for CEH notes
 <br><br>
 2. **OFFICIAL TEXT BOOK** | https://online.vitalsource.com/reader/books/9798894721378/pageid/3896?context_token=5c93f6b0-caa6-013f-b32d-72b8961f00a7
 <br>
-2.1 **ILABS PDF** | XXXX
+2.1 **ILABS PDF** | https://drive.google.com/file/d/1HF5EWmzGuj1Na3Pv7RmquJF1MpvVIk6X/view
 <br><br>
 3. **READABILITY** | https://ceh-practical.cavementech.com/
 <br><br>
