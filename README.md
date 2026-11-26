@@ -25,7 +25,7 @@ Repo for CEH notes
 <br><br>
     11. video:https://www.youtube.com/watch?v=CUGiZdhEWaU
 <br><br>
-
+12. linnk for ai activationn :https://learn.eccouncil.org/courseVideo/certified-ethical-hacker-v13-ai?lessonId=f8394b8c-d50a-456a-b60c-a503c9209605&finalAssessment=false&logged=true
 <br><br>
 
 <br><br>
