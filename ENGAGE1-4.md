@@ -1,3 +1,29 @@
+Tips for solving malware questions:
+Set the host and port to: 5552, 9871, 6703 and perform nmap scan. Once you know which port is open and then use the following tool.
+
+njRAT → Use this
+MoSucker
+ProRAT → Don’t use if password is not provided
+Theef → Use this
+HTTP RAT → Use this
+---
+ IoT, Vulnerabilities Analysis, wi-fi and Priv Esc part are added but they are very easy
+---
+2. Faced questions related to new topics mentioned in this video like vuln scan, malware analysis, privilege escalation, RAT etc
+3. Questions from wireshark is changed, included IoT protocols and cracking wireless encryption using pcap traces.
+4. Web exploitation questions are not so simple like previous. Faced almost 4-5 questions alone in this domain. 
+
+---
+stego .bmp files is open stego
+stego .jpg files is steghide
+--
+cryptoforge for right click icon option (you may have to install onn windows)
+--
+
+*crack the hash located at example.com/hash with john -> wget example.com/hash -> echo hash |base64 -d -> john hash
+*Do a dig against example.com and unhash the value of "Flag 5" and select ans -> dig example.com TXT -? echo hash |base64 -d
+*With regards to load balancing, what does www.certified hacker.com say about this? -> lbd example.com
+
 TIPS to getting file share:
 -know creds for one of the machines (windows better)
 -grab the ip for the windows machine
