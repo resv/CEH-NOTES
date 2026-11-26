@@ -23,7 +23,7 @@ Repo for CEH notes
 <br><br>
 10. **unexplored quick commands** | https://www.stationx.net/hacking-tools-cheat-sheet/
 <br><br>
-
+    11. video:https://www.youtube.com/watch?v=CUGiZdhEWaU
 <br><br>
 
 <br><br>
